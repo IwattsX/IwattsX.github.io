@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./script.js"></script>
+</head>
+<body>
+    <!-- onmouseover="openNav()" onmouseout="closeNav()" -->
+    <div class="sidebar" id="mySidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="#About" onclick="opentab('About')">About</a>
+            <a href="#Resume" onclick="opentab('Resume')">Resume</a>
+            <a href="#Contacts" onclick="opentab('Contacts')">Contacts</a>
+    </div>
+    <div id="main">
+        <button class="openbtn" onclick="openNav()">☰ Open Sidebar</button>  
+
+        <div id="About" class="tabcontent">
+            <h2><b>About Me</b></h2>
+            
+            <p>Hello, I'm Isaac Watts.
+                <br> 
+                A Junior computer science student at Virginia State University.
+            </p>
+
+            <p><b>GPA:</b> 3.9</p>
+
+            <img src = "./Files/Isaacpic.jpg" class="imgCenter">
+        </div>
+
+
+
+
+
+        <div id="Resume" class="tabcontent" style="display:none">
+            <h1><b>Resume Download</b></h1>
+            <a href="./Files/IsaacResume.pdf" download="IsaacWattsResume">
+                <button type ="button" class="btn">Download</button>
+            </a>
+
+            <br>
+            
+            <!-- THIS DOESN'T WORK FOR MOBILE SO HAVE TO USE A PIC and Download button instead -->
+        <embed src="./Files/IsaacResume.pdf" class="embed" width="1280" height="1280">
+        </div>
+      
+
+
+
+      <div id="Contacts" class="tabcontent" style="display:none">
+        <h2>Contact Me</h2>
+        <p><b>Email:</b>
+            <a href="mailto:Isaac.S.Watts@gmail.com">
+                <i class="fa fa-envelope" style="font-size: 38px;"></i>
+            </a>
+        </p>
+        <p><b>LinkedIn:</b>
+            <a href="https://www.linkedin.com/in/isaac-watts-605105251/">
+                <i class="fa fa-linkedin-square" style="font-size:38px"></i>
+            </a>
+        </p>
+        <p><b>Github:</b> 
+            <a href="https://github.com/IsaacVSU">
+                <i class="fa fa-github" style="font-size: 38px;"></i>
+            </a>
+        </p>
+      </div>
+    </div>
+</body>
+</html>
