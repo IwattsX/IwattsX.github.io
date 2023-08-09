@@ -10,10 +10,12 @@
 <body>
     <!-- onmouseover="openNav()" onmouseout="closeNav()" -->
     <div class="sidebar" id="mySidebar">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-            <a href="#About" onclick="opentab('About')">About</a>
-            <a href="#Resume" onclick="opentab('Resume')">Resume</a>
-            <a href="#Contacts" onclick="opentab('Contacts')">Contacts</a>
+        <ul>
+            <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a> </li>
+            <li><a class="active" href="#About" onclick="opentab('About')">About</a> </li>
+            <li><a href="#Resume" onclick="opentab('Resume')">Resume</a> </li>
+            <li><a href="#Contacts" onclick="opentab('Contacts')">Contacts</a></li>
+        </ul>
     </div>
     <div id="main">
         <button class="openbtn" onclick="openNav()">☰ Open Sidebar</button>  

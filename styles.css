@@ -4,6 +4,7 @@ body {
     background-color: powderblue;
 }
 
+
 .sidebar {
     height: 100%;
     width: 0px;
@@ -16,8 +17,12 @@ body {
     transition: 0.5s;
     padding-top: 60px;
   }
+  .sidebar ul{
+      list-style-type: none;
+    }
   
-  .sidebar a {
+  
+  .sidebar ul li a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
@@ -26,9 +31,17 @@ body {
     transition: 0.3s;
   }
   
-  .sidebar a:hover {
+  .sidebar ul li a:hover {
     color: #f1f1f1;
   }
+
+  /*
+  THIS MAKES A TAB BG COLOR Change
+  Note: Will need to use this in a javascript code to display the active tab
+   .sidebar ul li a.active{
+    background-color: darkturquoise;
+    color: white;
+  } */
   
   .sidebar .closebtn {
     position: absolute;
