@@ -78,17 +78,17 @@ body {
     .sidebar a {font-size: 18px;}
     embed{display: none;}
   }
-/* Download button */
-.btn {
+  
+  .btn {
     background-color: DodgerBlue;
     border: none;
     color: white;
     padding: 12px 30px;
     cursor: pointer;
-    font-size: 33px;
-    display: block;
-}
-
-.btn:hover {
-background-color: RoyalBlue;
-}
+    font-size: 20px;
+  }
+  
+  /* Darker background on mouse-over */
+  .btn:hover {
+    background-color: RoyalBlue;
+  }
