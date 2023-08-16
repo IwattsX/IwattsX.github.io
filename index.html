@@ -12,24 +12,20 @@
     <div class="sidebar" id="mySidebar">
         <ul>
             <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a> </li>
-            <li><a href="#About" id="#About" onclick="opentab('About')" class="active">About</a> </li>
+            <li><a href="#Home" id="#Home" onclick="opentab('Home')" class="active">Home</a> </li>
             <li><a href="#Resume" id="#Resume"  onclick="opentab('Resume')">Resume</a> </li>
+            <li><a href="#Skills" id="#Skills" onclick="opentab('Skills')">Skills</a></li>
             <li><a href="#Contacts" id="#Contacts" onclick="opentab('Contacts')">Contacts</a></li>
         </ul>
     </div>
     <div id="main">
         <button class="openbtn" onclick="openNav()">☰ Open Sidebar</button>  
 
-        <section id="About" class="tabcontent">
-            <h2><b>About Me</b></h2>
-            
+        <section id="Home" class="tabcontent">
             <p>Hello, I'm Isaac Watts.
                 <br> 
                 A Junior computer science student at Virginia State University.
             </p>
-
-            <p><b>GPA:</b> 3.9</p>
-
             <img src = "./Files/Isaacpic.jpg" class="imgCenter">
         </section>
 
@@ -69,6 +65,33 @@
             </a>
         </p>
     </section>
+
+    <section id="Skills" class="tabcontent" style="display:none">
+        <ul>
+        <li><h2><b>Programming Languages:</b></h2></li>
+            <ul>
+                <li>Python</li>
+                <li>C++</li>
+                <li>C#</li>
+                <li>Java</li>
+                <li>JavaScript</li>
+                <li>R</li>
+            </ul>
+        <li><h2><b>Frameworks</b></h2></li>
+            <ul>
+                <li>Robot Operating System (ROS) using Ubuntu</li>
+            </ul>
+        <h2><b>Databases:</b></h2>
+            <ul>
+                <li>SQL</li>
+            </ul>
+        <li><h2><b>Others</b></h2></li>
+            <ul>
+                <li>Git/Github</li>
+            </ul>
+        </ul>
+    </section>
+
     </div>
 </body>
 </html>
