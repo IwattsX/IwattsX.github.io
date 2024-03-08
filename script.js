@@ -2,7 +2,7 @@ function opentab(tabName) {
 
   //Makes the tabs not active so they aren't highlighted
   var elms = document.getElementById("mySidebar").getElementsByTagName("a");
-  console.log(elms);
+  // console.log(elms);
 
   for(var k = 0; k<elms.length; k++){
     if(elms[k].id === '#'.concat(tabName)){
