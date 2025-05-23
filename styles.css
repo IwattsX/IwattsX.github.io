@@ -90,3 +90,32 @@ body {
 .btn:hover {
   background-color: RoyalBlue;
 }
+
+
+.accordion {
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  transition: background-color 0.2s ease;
+  margin-top: 10px;
+}
+
+.accordion:hover,
+.accordion.active {
+  background-color: #555;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: #f9f9f9;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  border: 1px solid #ccc;
+}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,39 +8,66 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Certifications - Isaac Watts</title>
 </head>
+
 <body>
     <div class="topnav">
         <ul>
             <li><a href="/home.html">Home</a></li>
             <li><a href="/resume.html">Resume</a></li>
             <li><a href="/skills.html">Skills</a></li>
-            <li><a href="/certs.html"  class="active">Certifications</a></li>
+            <li><a href="/certs.html" class="active">Certifications</a></li>
             <li><a href="/contacts.html">Contacts</a></li>
         </ul>
     </div>
 
     <div class="main">
-        <h2>My certifications: </h2>
+        <h2>My Certifications</h2>
+        <h4>(Click on the buttons below to view)</h4>
 
-        <iframe src="./Files/certs/Android_CodePath_cert.pdf" class="embed" width="1280" height="700"></iframe>
-        <hr>
+        <button class="accordion">Data Science</button>
+        <div class="panel">
+            <iframe src="./Files/certs/CertificateOfCompletion_Statistics_Foundations_3_Using_Data_Sets.pdf"
+                width="100%" height="600"></iframe>
+            <hr>
+            <iframe src="./Files/certs/CertificateOfCompletion_Statistics_Foundations_1_The_Basics.pdf" width="100%"
+                height="600"></iframe>
+            <hr>
+            <iframe src="./Files/certs/CertificateOfCompletion_Introduction_to_Data_Science.pdf" width="100%"
+                height="600"></iframe>
+            <hr>
+            <iframe src="./Files/certs/CertificateOfCompletion_Learning_Excel_Data_Analysis.pdf" width="100%"
+                height="600"></iframe>
+        </div>
 
-        <iframe src="./Files/certs/annotated-certificate-MATLAB_Fundamentals.pdf" class="embed" width="1280" height="700"></iframe>
-        <hr>
+        <button class="accordion">MATLAB</button>
+        <div class="panel">
+            <iframe src="./Files/certs/annotated-certificate-MATLAB_Fundamentals.pdf" width="100%"
+                height="600"></iframe>
+            <hr>
+            <iframe src="./Files/certs/MATLAB_Programming_Techniques_cert.pdf" width="100%" height="600"></iframe>
+        </div>
 
-        <iframe src="./Files/certs/MATLAB_Programming_Techniques_cert.pdf" class="embed" width="1280" height="700"></iframe>
-        <hr>
-            
-        <iframe src="./Files/certs/CertificateOfCompletion_Learning_Excel_Data_Analysis.pdf" class="embed" width="1280" height="700"></iframe>
-        <hr>
-
-        <iframe src="./Files/certs/CertificateOfCompletion_Introduction_to_Data_Science.pdf" class="embed" width="1280" height="700"></iframe>
-        <hr>
-        
-        <iframe src="./Files/certs/CertificateOfCompletion_Statistics_Foundations_1_The_Basics.pdf" class="embed" width="1280" height="700"></iframe>
-
-
-        
+        <button class="accordion">Android Development</button>
+        <div class="panel">
+            <iframe src="./Files/certs/Android_CodePath_cert.pdf" width="100%" height="600"></iframe>
+        </div>
     </div>
+
+    <script>
+        const accordions = document.querySelectorAll(".accordion");
+        accordions.forEach((acc) => {
+            acc.addEventListener("click", function () {
+                this.classList.toggle("active");
+                const panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        });
+    </script>
+
 </body>
+
 </html>
