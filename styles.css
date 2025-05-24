@@ -69,9 +69,11 @@ body {
   text-align: center;
 }
 
+
 .main ul {
   list-style-position: outside;
-  padding-left: 20px; /* Adjust as needed */
+  padding-left: 20%; /* Adjust as needed */
+  padding-right: 20%;
   display: inline-block; /* Keeps the list items centered */
   text-align: left; /* Aligns text within the list to the left */
 }
